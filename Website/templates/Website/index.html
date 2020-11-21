@@ -1,0 +1,11 @@
+{% extends 'Website/main.html' %}
+{% load static %}
+{% block content %}
+<h2> This is API view </h2>
+{%for i in data%}
+
+{{i.Make_ID}}
+{{i.Model_ID}}
+
+{% endfor %}
+{% endblock content %}
